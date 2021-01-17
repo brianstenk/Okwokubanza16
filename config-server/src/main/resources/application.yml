@@ -1,0 +1,23 @@
+#spring:
+#  profiles:
+#    active: dev
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/brianstenk/Okwokubanza16.git
+
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/brianstenk/Okwokubanza16.git
+          #search-paths:
+            #- "EmailServiceConfigProperties/{application}/{profile}"
